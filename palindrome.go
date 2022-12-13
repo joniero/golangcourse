@@ -3,7 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(IsPalindrome("tamat"))
+	var input string
+	fmt.Print("Masukkan kata yang ingin dicek:")
+	fmt.Scan(&input)
+	if IsPalindrome(input) {
+		fmt.Print("Palindrome")
+	} else {
+		fmt.Print("Bukan Palindrome")
+	}
 }
 
 func IsPalindrome(input string) bool {
